@@ -15,6 +15,7 @@
 		F7DDA9F3252B0D0D000CA672 /* tmp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7DDA9F1252B0D0D000CA672 /* tmp.xcdatamodeld */; };
 		F7DDA9FE252B0D0E000CA672 /* tmpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDA9FD252B0D0E000CA672 /* tmpTests.swift */; };
 		F7DDAA09252B0D0E000CA672 /* tmpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDAA08252B0D0E000CA672 /* tmpUITests.swift */; };
+		F7DDAA1A252B0E02000CA672 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDAA19252B0E02000CA672 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F7CE570A25494A2B008C2E99 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F7CE56FC25494A29008C2E99 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		F7DDA9E3252B0D0C000CA672 /* tmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DDA9E6252B0D0C000CA672 /* tmpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmpApp.swift; sourceTree = "<group>"; };
 		F7DDA9E8252B0D0C000CA672 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +64,7 @@
 		F7DDAA04252B0D0E000CA672 /* tmpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DDAA08252B0D0E000CA672 /* tmpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmpUITests.swift; sourceTree = "<group>"; };
 		F7DDAA0A252B0D0E000CA672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DDAA19252B0E02000CA672 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +92,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7CE56F925494A29008C2E99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7CE56FC25494A29008C2E99 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F7DDA9DA252B0D0C000CA672 = {
 			isa = PBXGroup;
 			children = (
 				F7DDA9E5252B0D0C000CA672 /* tmp */,
 				F7DDA9FC252B0D0E000CA672 /* tmpTests */,
 				F7DDAA07252B0D0E000CA672 /* tmpUITests */,
+				F7CE56F925494A29008C2E99 /* Frameworks */,
 				F7DDA9E4252B0D0C000CA672 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,6 +131,7 @@
 				F7DDA9F4252B0D0D000CA672 /* Info.plist */,
 				F7DDA9F1252B0D0D000CA672 /* tmp.xcdatamodeld */,
 				F7DDA9EC252B0D0D000CA672 /* Preview Content */,
+				F7DDAA19252B0E02000CA672 /* WebView.swift */,
 			);
 			path = tmp;
 			sourceTree = "<group>";
@@ -146,6 +172,7 @@
 				F7DDA9DF252B0D0C000CA672 /* Sources */,
 				F7DDA9E0252B0D0C000CA672 /* Frameworks */,
 				F7DDA9E1252B0D0C000CA672 /* Resources */,
+				F7CE570A25494A2B008C2E99 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -266,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7DDA9F0252B0D0D000CA672 /* Persistence.swift in Sources */,
+				F7DDAA1A252B0E02000CA672 /* WebView.swift in Sources */,
 				F7DDA9F3252B0D0D000CA672 /* tmp.xcdatamodeld in Sources */,
 				F7DDA9E9252B0D0C000CA672 /* ContentView.swift in Sources */,
 				F7DDA9E7252B0D0C000CA672 /* tmpApp.swift in Sources */,
